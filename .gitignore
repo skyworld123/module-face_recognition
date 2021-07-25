@@ -7,3 +7,6 @@ output/
 
 # face recognition models
 models/
+
+# others
+others/face_thumb
