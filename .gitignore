@@ -2,7 +2,7 @@
 database/
 
 # input and output files
-#input/
+input/
 output/
 
 # face recognition models
