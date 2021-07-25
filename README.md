@@ -34,5 +34,5 @@
 
 **注意：**
 
-运行代码前，请事先从InsightFace的[Model-Zoo](https://github.com/deepinsight/insightface/wiki/Model-Zoo)下载所需的人脸识别模型，并放置在model/目录下。（如果你愿意，也可以根据InsightFace中训练人脸识别模型的步骤自行训练模型并使用之。）本项目默认使用Model-Zoo中的LResNet100E-IR,ArcFace@ms1m-refine-v2（model-r100-ii），若选用其他模型，请在config/config.py中修改model_name配置。
+运行人脸识别代码face_recognition.py前，请事先从InsightFace的[Model-Zoo](https://github.com/deepinsight/insightface/wiki/Model-Zoo)下载所需的人脸识别模型，并放置在model/目录下。（如果你愿意，也可以根据InsightFace中训练人脸识别模型的步骤自行训练模型并使用之。）本项目默认使用Model-Zoo中的LResNet100E-IR,ArcFace@ms1m-refine-v2（model-r100-ii），若选用其他模型，请在config/config.py中修改model_name配置。
 

@@ -25,19 +25,19 @@ def parse_arguments(argv):
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--db',
-                        default='db1',
+                        default='db_demo',
                         type=str, help='Database used for face recognition.')
 
     parser.add_argument('--input',
-                        default='input/db1_rec_input.jpg',
+                        default='input/db_demo_rec_input.jpg',
                         type=str, help='Input photo.')
 
     parser.add_argument('--output-text',
-                        default='output/db1_output_text.txt',
+                        default='output/db_demo_output_text.txt',
                         type=str, help='Output result in text file.')
 
     parser.add_argument('--output-image',
-                        default='output/db1_output_image.jpg',
+                        default='output/db_demo_output_image.jpg',
                         type=str, help='Output result in image file.')
 
     parser.add_argument('--image-size', type=str, help='Image size (height, width) in pixels.', default='112,112')
@@ -171,8 +171,8 @@ def match_embeddings(db_embed_list, input_embed_list):
 def get_image_size_tuple(image_size_str):
     size_list = image_size_str.split(',')
     if len(size_list) != 2:
-        print('ERROR: Format of image size is wrong. Abort.'
-              '\tNote: Correct format: "x,y" (without quotes)')
+        print('ERROR: Format of image size is wrong. Abort.')
+        print('\tNote: Correct format: "x,y" (without quotes)')
         exit(0)
     image_size_tuple = (int(size_list[0]), int(size_list[1]))
     return image_size_tuple
@@ -180,6 +180,11 @@ def get_image_size_tuple(image_size_str):
 
 def main(args):
     # initialization
+    model_dir = os.path.join(model_root_dir, model_name)
+    if not os.path.exists(model_dir):
+        print('ERROR: Model "%s" not found. Abort.' % model_name)
+        print('\tNote: Please put model %s under "model/" before running this programme.' % model_name)
+        exit(0)
     database_dir = os.path.join(db_root_dir, args.db)
     if not os.path.exists(database_dir):
         print('ERROR: Database "%s" not exist. Abort.' % args.db)

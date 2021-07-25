@@ -1,8 +1,0 @@
-100001	Barack Obama	Barack_Obama.jpg
-100002	Donald Trump	Donald_Trump.jpg
-100005	George HW Bush	George_HW_Bush.jpg
-100007	George W Bush	George_W_Bush.jpg
-100010	Jimmy Carter	Jimmy_Carter.jpg
-100012	Joe Biden	Joe_Biden.jpg
-100015	Ronald Reagan	Ronald_Reagan.jpg
-100019	William Clinton	William_Clinton.jpg

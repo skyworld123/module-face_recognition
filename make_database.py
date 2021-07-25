@@ -23,7 +23,7 @@ def parse_arguments(argv):
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--db',
-                        default='db1',
+                        default='db_demo',
                         type=str, help='Database name.')
 
     parser.add_argument('--create',
@@ -31,11 +31,11 @@ def parse_arguments(argv):
                         type=bool, help='Set to True to create database if it does not exist.')
 
     parser.add_argument('--indir',
-                        default='input/db1_images',
+                        default='input/db_demo_images',
                         type=str, help='Directory with unaligned images.')
 
     parser.add_argument('--input-text',
-                        default='input/db1_info.txt',
+                        default='input/db_demo_info.txt',
                         type=str, help='File to input information of known persons')
 
     parser.add_argument('--image-size', type=str, help='Image size (height, width) in pixels.', default='112,112')
@@ -64,8 +64,8 @@ def main(args):
         if args.create:
             os.makedirs(database_dir)
         else:
-            print('ERROR: Database "%s" not created. Abort.'
-                  '\tNote: To create a database, add "--create=True" before running the programme.' % args.db)
+            print('ERROR: Database "%s" not created. Abort.' % args.db)
+            print('\tNote: To create a database, add "--create=True" before running the programme.')
             exit(0)
     thumb_dir = os.path.join(database_dir, db_thumb_dir)
     person_info_path = os.path.join(database_dir, db_person_info)
