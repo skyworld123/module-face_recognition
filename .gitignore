@@ -1,0 +1,9 @@
+# database
+database/
+
+# input and output files
+input/
+output/
+
+# face recognition models
+models/
