@@ -1,12 +1,12 @@
 # database
-database/
+#database/
 
 # input and output files
-input/
-output/
+#input/
+#output/
 
 # face recognition models
-models/
+#models/
 
 # others
-others/face_thumb
+#others/face_thumb
