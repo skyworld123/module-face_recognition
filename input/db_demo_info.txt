@@ -6,4 +6,3 @@
 100012	Joe Biden	Joe_Biden.jpg
 100015	Ronald Reagan	Ronald_Reagan.jpg
 100019	William Clinton	William_Clinton.jpg
- 
