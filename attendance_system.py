@@ -44,7 +44,7 @@ def parse_arguments(argv):
                         type=int, help='Set to >=1 to save the recognition result (video).')
 
     parser.add_argument('--output',
-                        default='output/video_rec_result.avi',
+                        default='output/video_att_result.avi',
                         type=str, help='Path to save the recognition result (video) (if "--save" set to >=1).')
 
     parser.add_argument('--dup-check',
