@@ -1,9 +1,9 @@
 # database
-#database/
+database/
 
 # input and output files
-#input/
-#output/
+input/
+output/
 
 # face recognition models
 models/
@@ -12,4 +12,4 @@ models/
 others/
 
 # pycache
-*/__pycache__/
+__pycache__/
