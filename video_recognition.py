@@ -113,7 +113,7 @@ def main(args):
     color_print('Loading other parameters finished', normal_c)
 
     # face recognition
-    print('Face recognition will begin soon ...')
+    color_print('Face recognition will begin soon ...', normal_c)
     if args.camera >= 1:
         cap = cv2.VideoCapture(0)
     else:
@@ -164,7 +164,7 @@ def main(args):
     if args.save >= 1:
         out.release()
     cv2.destroyAllWindows()
-    print('End face recognition')
+    color_print('End face recognition', normal_c)
     # face recognition end
 
 
